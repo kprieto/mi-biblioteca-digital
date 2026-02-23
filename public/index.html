@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Biblioteca Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Mi Biblioteca Digital</h1>
+
+        <section id="nuevo-libro">
+            <h3>Agregar Nuevo Libro</h3>
+            <form id="formulario-libro">
+                <input type="text" id="titulo" placeholder="Título del libro" required>
+                <input type="text" id="autor" placeholder="Autor" required>
+                <input type="text" id="isbn" placeholder="ISBN">
+                <input type="text" id="genero" placeholder="Género">
+                <input type="url" id="imagenUrl" placeholder="URL de la imagen de portada">
+                <div class="campo-checkbox">
+                    <label for="disponible">
+                        <input type="checkbox" id="disponible" checked> 
+                        ¿Está disponible para préstamo?
+                    </label>
+                </div>
+                <button type="submit">Guardar en la Nube</button>
+            </form>
+        </section>
+
+        <hr>
+        <h1>Catálogo de Libros</h1>
+        <div id="lista-libros" class="grid-libros">
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
